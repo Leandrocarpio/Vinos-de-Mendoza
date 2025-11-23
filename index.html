@@ -3,110 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinos de Mendoza - Experiencia Única</title>
+    <title>Mendoza Wine - Experiencia Vitivinícola</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-      (function(){
-        var img = new Image();
-        img.src = "https://example.com/pixel?event=visit&ts=" + Date.now();
-      })();
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <img src="iMG/portada.png" alt="Viñedos mendocinos" class="vineyard-img">
-            <h1 class="brand">Vinos de Mendoza</h1>
-            <p class="brand-desc">Tradición, calidad y pasión en cada copa</p>
+    <!-- Hero Full Screen -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Mendoza Wine</h1>
+            <p class="hero-subtitle">Descubrí la tierra del vino argentino</p>
+            <button class="hero-btn" id="explorBtn">Explorar Tours</button>
         </div>
-        <nav class="main-nav">
-            <a href="#productos">Productos</a>
-            <a href="#beneficios">Beneficios</a>
-            <a href="#testimonios">Testimonios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <section id="productos" class="products">
-            <h2>Nuestros vinos destacados</h2>
-            <div class="product-list">
-                <div class="product-card">
-                    <img src="iMG/Malbec premium.png" alt="Malbec Premium">
-                    <h3>Malbec Premium</h3>
-                    <p>Gran cuerpo, aromas a frutos rojos y notas especiadas. Ideal para carnes y pastas.</p>
+    </section>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Mendoza Wine</a>
+            <ul class="nav-menu">
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#vinos">Vinos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#reserva">Reservar</a></li>
+                <li><a href="about.html">Sobre mí</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección Tours -->
+    <section id="tours" class="section">
+        <div class="container">
+            <h2 class="section-title">Tours Exclusivos</h2>
+            <p class="section-desc">Experiencias únicas en los viñedos más prestigiosos de Mendoza</p>
+            <div class="tours-grid" id="toursContainer">
+                <!-- Tours se cargan dinámicamente desde tasks.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Vinos -->
+    <section id="vinos" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Nuestros Vinos</h2>
+            <p class="section-desc">Selección premium de las mejores bodegas mendocinas</p>
+            <div class="vinos-grid" id="vinosContainer">
+                <!-- Vinos se cargan dinámicamente desde tasks.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia del Tour -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">¿Qué disfrutarás en tu tour?</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <i class="bi bi-geo-alt-fill experience-icon"></i>
+                    <h3>Origen Auténtico</h3>
+                    <p>Viñedos a los pies de los Andes, territorio único en el mundo</p>
                 </div>
-                <div class="product-card">
-                    <img src="iMG/reserva.png" alt="Blend Reserva">
-                    <h3>Blend Reserva</h3>
-                    <p>Mezcla de uvas seleccionadas, crianza en barrica. Perfecto para ocasiones especiales.</p>
+                <div class="experience-card">
+                    <i class="bi bi-brightness-high-fill experience-icon"></i>
+                    <h3>Clima Perfecto</h3>
+                    <p>300 días de sol al año, ideal para vinos de excelencia</p>
                 </div>
-                <div class="product-card">
-                    <img src="iMG/chardonnay.png" alt="Chardonnay">
-                    <h3>Chardonnay</h3>
-                    <p>Fresco y frutal, con notas cítricas y florales. Excelente para pescados y quesos suaves.</p>
+              <div class="experience-card">
+                    <i class="bi bi-book-fill experience-icon"></i>
+                    <h3>Historia Vitivinícola</h3>
+                    <p>Conocé la tradición centenaria del vino mendocino</p>
+                </div>
+                <div class="experience-card">
+                    <i class="bi bi-award-fill experience-icon"></i>
+                    <h3>Calidad Premium</h3>
+                    <p>Vinos galardonados internacionalmente</p>
+                </div>
+                <div class="experience-card">
+                    <i class="bi bi-people-fill experience-icon"></i>
+                    <h3>Guías Expertos</h3>
+                    <p>Sommeliers certificados en cada experiencia</p>
+                </div>
+                <div class="experience-card">
+                    <i class="bi bi-camera-fill experience-icon"></i>
+                    <h3>Paisajes Únicos</h3>
+                    <p>Vistas panorámicas de la cordillera</p>
                 </div>
             </div>
-        </section>
-        <section id="beneficios" class="benefits">
-            <div class="benefit-cards">
-                <div class="benefit-card">
-                    <span class="benefit-icon">🍇</span>
-                    <h4>Origen Mendocino</h4>
-                    <p>Vinos elaborados en la mejor región vitivinícola de Argentina.</p>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section testimonios-section">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros visitantes</h2>
+            <p class="section-desc">Experiencias reales de viajeros que vivieron Mendoza Wine</p>
+            <div class="testimonials-grid" id="testimonialsContainer">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">L</div>
+                        <div>
+                            <p class="testimonial-author">Laura Martínez</p>
+                            <p class="testimonial-location">España</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Una experiencia inolvidable. Los paisajes, el vino y la atención fueron excepcionales. El tour premium superó todas mis expectativas."</p>
                 </div>
-                <div class="benefit-card">
-                    <span class="benefit-icon">🌞</span>
-                    <h4>Calidad y Tradición</h4>
-                    <p>Más de 100 años de historia y pasión en cada botella.</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <p class="testimonial-author">Martín González</p>
+                            <p class="testimonial-location">Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Mendoza Wine organizó el tour perfecto. Visitamos 4 bodegas increíbles en un día. Guías muy profesionales y conocedores."</p>
                 </div>
-                <div class="benefit-card">
-                    <span class="benefit-icon">🍷</span>
-                    <h4>Experiencia Única</h4>
-                    <p>Sabores auténticos para turistas y locales exigentes.</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <p class="testimonial-author">Ana Silva</p>
+                            <p class="testimonial-location">Brasil</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Recomiendo 100%. Los vinos son de calidad mundial y el servicio es impecable. Una experiencia que repetiría sin dudarlo."</p>
                 </div>
             </div>
-        </section>
-        <section class="cta">
-            <h2>¡Reserva tu experiencia o compra ahora!</h2>
-            <button class="cta-btn">Quiero mi vino mendocino</button>
-        </section>
-        <section id="contacto" class="form-section">
-            <h2>¿Quieres recibir ofertas y novedades?</h2>
-            <form class="lead-form">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                <button type="submit">Enviar</button>
+        </div>
+    </section>
+
+    <!-- Formulario Reserva -->
+    <section id="reserva" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Reservá tu Experiencia</h2>
+            <form class="reserva-form" id="reservaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="personas">Cantidad de personas</label>
+                    <select id="personas" required>
+                        <option value="">Seleccionar</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3-5">3-5 personas</option>
+                        <option value="6+">6+ personas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha preferida</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Reserva</button>
             </form>
-        </section>
-        <section id="testimonios" class="testimonials">
-            <h2>Testimonios</h2>
-            <div class="testimonial">
-                <p>“Una experiencia inolvidable, los vinos mendocinos son incomparables.”</p>
-                <div class="stars">★★★★★</div>
-                <span>Laura - España</span>
-            </div>
-            <div class="testimonial">
-                <p>“Orgulloso de los productos de mi tierra. Calidad y sabor únicos.”</p>
-                <div class="stars">★★★★★</div>
-                <span>Martín - Mendoza</span>
-            </div>
-            <div class="testimonial">
-                <p>“La atención y la variedad son excelentes. ¡Recomiendo reservar!”</p>
-                <div class="stars">★★★★★</div>
-                <span>Ana - Brasil</span>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="about.html" target="_blank">Sobre el diseñador</a>
+            <div id="mensajeConfirmacion" class="mensaje-confirmacion"></div>
         </div>
-        <p>&copy; 2025 Vinos de Mendoza. Landing page diseñada por Leandro Carpio.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mendoza Wine. Experiencia vitivinícola diseñada por Leandro Carpio</p>
+            <a href="about.html" class="footer-link">Conocé al diseñador</a>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script type="module" src="main.js"></script>
 </body>
 </html>

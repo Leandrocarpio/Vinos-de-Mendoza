@@ -211,10 +211,6 @@ Mensaje de confirmación
 **Leandro Carpio**  
 Desarrollador Frontend & Diseñador Web
 
-- Portfolio: [tu-portfolio.com](#)
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Nombre](https://linkedin.com/in/tu-perfil)
-
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.

@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experiencias vitivinícolas exclusivas en Mendoza. Tours premium con degustación, guías expertos y paisajes únicos de la cordillera.">
+    <meta name="keywords" content="mendoza, vino, tours, turismo, bodegas, malbec, degustación">
+    <meta name="author" content="Leandro Carpio">
+    
+    <meta property="og:title" content="Mendoza Wine - Experiencia Vitivinícola">
+    <meta property="og:description" content="Descubrí la tierra del vino argentino con nuestros tours exclusivos">
+    <meta property="og:image" content="assets/img/portada.png">
+    <meta property="og:type" content="website">
+    
     <title>Mendoza Wine - Experiencia Vitivinícola</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,8 +22,8 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">Mendoza Wine</h1>
-            <p class="hero-subtitle">Descubrí la tierra del vino argentino</p>
-            <button class="hero-btn" id="explorBtn">Explorar Tours</button>
+            <p class="hero-subtitle">Experiencias vitivinícolas exclusivas</p>
+            <button class="hero-btn" id="explorBtn">Ver Tours Disponibles</button>
         </div>
     </section>
 
@@ -22,12 +31,17 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">Mendoza Wine</a>
-            <ul class="nav-menu">
-                <li><a href="#tours">Tours</a></li>
-                <li><a href="#vinos">Vinos</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#reserva">Reservar</a></li>
-                <li><a href="about.html">Sobre mí</a></li>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#tours" class="nav-link">Tours</a></li>
+                <li><a href="#vinos" class="nav-link">Vinos</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#reserva" class="nav-link">Reservar</a></li>
+                <li><a href="about.html" class="nav-link">Sobre mí</a></li>
             </ul>
         </div>
     </nav>
@@ -38,7 +52,7 @@
             <h2 class="section-title">Tours Exclusivos</h2>
             <p class="section-desc">Experiencias únicas en los viñedos más prestigiosos de Mendoza</p>
             <div class="tours-grid" id="toursContainer">
-                <!-- Tours se cargan dinámicamente desde tasks.js -->
+                <!-- Tours se cargan dinámicamente -->
             </div>
         </div>
     </section>
@@ -49,7 +63,7 @@
             <h2 class="section-title">Nuestros Vinos</h2>
             <p class="section-desc">Selección premium de las mejores bodegas mendocinas</p>
             <div class="vinos-grid" id="vinosContainer">
-                <!-- Vinos se cargan dinámicamente desde tasks.js -->
+                <!-- Vinos se cargan dinámicamente -->
             </div>
         </div>
     </section>
@@ -69,7 +83,7 @@
                     <h3>Clima Perfecto</h3>
                     <p>300 días de sol al año, ideal para vinos de excelencia</p>
                 </div>
-              <div class="experience-card">
+                <div class="experience-card">
                     <i class="bi bi-book-fill experience-icon"></i>
                     <h3>Historia Vitivinícola</h3>
                     <p>Conocé la tradición centenaria del vino mendocino</p>
@@ -98,13 +112,18 @@
         <div class="container">
             <h2 class="section-title">Lo que dicen nuestros visitantes</h2>
             <p class="section-desc">Experiencias reales de viajeros que vivieron Mendoza Wine</p>
-            <div class="testimonials-grid" id="testimonialsContainer">
+            <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-header">
-                        <div class="testimonial-avatar">L</div>
+                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=120&h=120&fit=crop&crop=face" 
+                             alt="Laura Martínez" 
+                             class="testimonial-avatar"
+                             loading="lazy"
+                             width="60"
+                             height="60">
                         <div>
                             <p class="testimonial-author">Laura Martínez</p>
-                            <p class="testimonial-location">España</p>
+                            <p class="testimonial-location">Madrid, España</p>
                         </div>
                     </div>
                     <div class="testimonial-stars">★★★★★</div>
@@ -112,21 +131,31 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
-                        <div class="testimonial-avatar">M</div>
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&h=120&fit=crop&crop=face" 
+                             alt="Martín González" 
+                             class="testimonial-avatar"
+                             loading="lazy"
+                             width="60"
+                             height="60">
                         <div>
                             <p class="testimonial-author">Martín González</p>
                             <p class="testimonial-location">Buenos Aires, Argentina</p>
                         </div>
                     </div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Mendoza Wine organizó el tour perfecto. Visitamos 4 bodegas increíbles en un día. Guías muy profesionales y conocedores."</p>
+                    <p class="testimonial-text">"Mendoza Wine organizó el tour perfecto. Visitamos 4 bodegas increíbles en un día. Guías muy profesionales y conocedores del vino."</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-header">
-                        <div class="testimonial-avatar">A</div>
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&h=120&fit=crop&crop=face" 
+                             alt="Ana Silva" 
+                             class="testimonial-avatar"
+                             loading="lazy"
+                             width="60"
+                             height="60">
                         <div>
                             <p class="testimonial-author">Ana Silva</p>
-                            <p class="testimonial-location">Brasil</p>
+                            <p class="testimonial-location">São Paulo, Brasil</p>
                         </div>
                     </div>
                     <div class="testimonial-stars">★★★★★</div>
@@ -140,38 +169,48 @@
     <section id="reserva" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Reservá tu Experiencia</h2>
-            <form class="reserva-form" id="reservaForm">
+            <form class="reserva-form" id="reservaForm" novalidate>
                 <div class="form-group">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" required>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" placeholder="Ingresá tu nombre completo" required>
+                    <span class="error-message" id="errorNombre"></span>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="tu@email.com" required>
+                    <span class="error-message" id="errorEmail"></span>
                 </div>
                 <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" required>
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" placeholder="Ej: 2616123777" required>
+                    <span class="error-message" id="errorTelefono"></span>
                 </div>
                 <div class="form-group">
-                    <label for="personas">Cantidad de personas</label>
+                    <label for="personas">Cantidad de personas *</label>
                     <select id="personas" required>
-                        <option value="">Seleccionar</option>
+                        <option value="">Seleccioná cantidad de personas</option>
                         <option value="1">1 persona</option>
                         <option value="2">2 personas</option>
                         <option value="3-5">3-5 personas</option>
                         <option value="6+">6+ personas</option>
                     </select>
+                    <span class="error-message" id="errorPersonas"></span>
                 </div>
                 <div class="form-group">
-                    <label for="fecha">Fecha preferida</label>
+                    <label for="fecha">Fecha preferida *</label>
                     <input type="date" id="fecha" required>
+                    <span class="error-message" id="errorFecha"></span>
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje (opcional)</label>
-                    <textarea id="mensaje" rows="4"></textarea>
+                    <textarea id="mensaje" rows="4" placeholder="¿Algún requerimiento especial?"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Enviar Reserva</button>
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">Enviar Reserva</span>
+                    <span class="btn-loader" style="display: none;">
+                        <i class="bi bi-arrow-repeat spinner"></i> Enviando...
+                    </span>
+                </button>
             </form>
             <div id="mensajeConfirmacion" class="mensaje-confirmacion"></div>
         </div>
@@ -180,11 +219,59 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Mendoza Wine. Experiencia vitivinícola diseñada por Leandro Carpio</p>
-            <a href="about.html" class="footer-link">Conocé al diseñador</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Mendoza Wine</h3>
+                    <p class="footer-desc">Experiencias vitivinícolas únicas en el corazón de Mendoza, Argentina.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <ul class="footer-links">
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#vinos">Vinos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#reserva">Reservar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Seguinos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-btn facebook" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-btn instagram" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5492616123777?text=Hola,%20vi%20Mendoza%20Wine%20y%20me%20interesa%20consultar" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="social-btn whatsapp" 
+                           aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mendoza Wine. Todos los derechos reservados.</p>
+                <a href="about.html" class="footer-link">Conocé al diseñador</a>
+            </div>
         </div>
     </footer>
 
-    <script type="module" src="main.js"></script>
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/5492616123777?text=Hola,%20vi%20tu%20landing%20Mendoza%20Wine%20y%20me%20interesa%20tu%20servicio" 
+       target="_blank" 
+       rel="noopener"
+       class="whatsapp-float" 
+       aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Consultás? Escribinos</span>
+    </a>
+
+    <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

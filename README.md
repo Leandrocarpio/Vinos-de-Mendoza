@@ -22,7 +22,7 @@
 - [Uso](#-uso)
 - [Características Técnicas](#-características-técnicas)
 - [Roadmap](#️-roadmap)
-- [Autor](#️-autor)
+- [Autor](#-autor)
 - [Licencia](#-licencia)
 
 ---
@@ -49,7 +49,7 @@ Servir como **portfolio profesional** que demuestre:
 
 ## 🚀 Demo en Vivo
 
-**[Ver Demo →](https://leandrocarpio.github.io/mendoza-wine/)**
+**[Ver Demo →](https://github.com/Leandrocarpio/Mendoza-Wine/)**
 
 > 📝 **Nota:** Reemplazá con tu link de GitHub Pages una vez desplegado.
 

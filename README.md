@@ -22,7 +22,7 @@
 - [Uso](#-uso)
 - [Características Técnicas](#-características-técnicas)
 - [Roadmap](#️-roadmap)
-- [Autor](#-autor)
+- [Autor](#️-autor)
 - [Licencia](#-licencia)
 
 ---
@@ -376,7 +376,7 @@ Frontend Developer & Web Designer
 
 - 📧 Email: leo_gabriel_carpio@hotmail.com
 - 📱 WhatsApp: [+54 9 261 612-3777](https://wa.me/5492616123777)
-- 💼 LinkedIn: [linkedin.com/in/tu-usuario](https://linkedin.com/in/leandrocarpio)
+- 💼 LinkedIn: [linkedin.com/in/leandrocarpio](https://linkedin.com/in/leandrocarpio)
 
 ---
 
@@ -429,7 +429,6 @@ Ver [LICENSE](LICENSE) para más detalles.
 
 - 📱 **WhatsApp:** [+54 9 261 612-3777](https://wa.me/5492616123777?text=Hola,%20vi%20tu%20landing%20Mendoza%20Wine%20y%20me%20interesa%20tu%20servicio)
 - 📧 **Email:** leo_gabriel_carpio@hotmail.com
-- 🌐 **Formulario:** [Hacer una consulta](#reserva)
 
 ---
 
